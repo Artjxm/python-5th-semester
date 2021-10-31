@@ -18,3 +18,6 @@ class Guesser:
 
     def get_opened(self):
         return ''.join(self.opened)
+
+    def get_word(self):
+        return self.word

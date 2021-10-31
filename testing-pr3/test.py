@@ -20,9 +20,5 @@ class TestGuesser(unittest.TestCase):
         self.assertEqual(self.guesser.get_opened(), 'wo??')
         pass
 
-    def test_3(self):
-        guesser = Guesser("word")
-        self.assertEqual(guesser.get_word(), "word")
-
     if __name__ == "__main__":
         unittest.main()
