@@ -21,3 +21,9 @@ class Guesser:
 
     def get_word(self):
         return self.word
+
+    def has_char(self, char):
+        for i in range(len(self.word)):
+            if self.word[i] == char and self.opened[i] != char:
+                return True
+        return False
