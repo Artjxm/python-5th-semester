@@ -10,3 +10,11 @@ class Guesser:
             if ch == '?':
                 return False
         return True
+
+    def open_char(self, char):
+        for i in range(len(self.word)):
+            if self.word[i] == char:
+                self.opened[i] = self.word[i]
+
+    def get_opened(self):
+        return ''.join(self.opened)
